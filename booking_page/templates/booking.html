@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<nav>
+    <a href="/">Book Now</a>
+    <a href="/bookings">All Bookings</a>
+</nav>
+
+<h2>Book Your Slot</h2>
+<form action="/book" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="date" name="date" required>
+    <input type="time" name="time" required>
+    <button type="submit">Book Now</button>
+</form>
+</body>
+</html>

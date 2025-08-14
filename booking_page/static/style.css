@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form button {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.action-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.action-btn.update i {
+    color: green;
+}
+
+.action-btn.delete i {
+    color: red;
+}
+
+
+/* Search bar container */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Search input field */
+.search-container input[type="text"] {
+    padding: 10px 15px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px; /* Rounded left side */
+    outline: none;
+    font-size: 16px;
+}
+
+/* Search button */
+.search-container button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-left: none;
+    border-radius: 0 20px 20px 0; /* Rounded right side */
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #555;
+}
+
+/* Clear button */
+.search-container a {
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.search-container a:hover {
+    background-color: darkred;
+}
