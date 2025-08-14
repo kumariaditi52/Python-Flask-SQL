@@ -1,0 +1,95 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Dashboard</title>
+</head>
+<body>
+    <h1>Teacher Dashboard</h1>
+    <p>Welcome Teacher! Here you can manage classes, assignments, and students.</p>
+    <a href="{{ url_for('dashboard') }}">Back to Main Dashboard</a>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar h2 {
+            margin: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            background: #ff4d4d;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .navbar a:hover {
+            background: #e60000;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            background: #333;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>Teacher Dashboard</h2>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h3>Manage Classes</h3>
+            <p>Create and manage your classes here.</p>
+            <a href="#" class="btn">Open</a>
+        </div>
+        <div class="card">
+            <h3>Assignments</h3>
+            <p>Upload and check assignments.</p>
+            <a href="#" class="btn">Open</a>
+        </div>
+        <div class="card">
+            <h3>Manage Students</h3>
+            <p>View and manage your students.</p>
+            <a href="#" class="btn">Open</a>
+        </div>
+    </div>
+
+</body>
+</html>

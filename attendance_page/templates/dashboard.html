@@ -1,0 +1,101 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body>
+    <h2>Welcome, {{ name }}</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Teacher Dashboard</h3>
+            <p>Manage classes, assignments, and students.</p>
+            <a href="{{ url_for('teacher_dashboard') }}" class="btn">Open</a>
+        </div>
+        <div class="card">
+            <h3>Student Dashboard</h3>
+            <p>View assignments, grades, and announcements.</p>
+            <a href="{{ url_for('student_dashboard') }}" class="btn">Open</a>
+        </div>
+    </div>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+    <style>
+        /* Navbar Styling */
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar h2 {
+            margin: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            background: #ff4d4d;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .navbar a:hover {
+            background: #e60000;
+        }
+        /* Card Layout */
+        .card-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            flex: 1;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            background: #333;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>Welcome, {{ name }}</h2>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+
+    <!-- Dashboard Cards -->
+    <div class="card-container">
+        <div class="card">
+            <h3>Teacher Dashboard</h3>
+            <p>Manage classes, assignments, and students.</p>
+            <a href="{{ url_for('teacher_dashboard') }}" class="btn">Open</a>
+        </div>
+        <div class="card">
+            <h3>Student Dashboard</h3>
+            <p>View assignments, grades, and announcements.</p>
+            <a href="{{ url_for('student_dashboard') }}" class="btn">Open</a>
+        </div>
+    </div>
+
+</body>
+</html>
